@@ -16,7 +16,7 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/tt3-logo-3.svg"
+              src="/tt3-logo-4.svg"
               alt="Team Time Tables"
               className="h-[60px] w-auto"
             />
@@ -677,7 +677,7 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <img
-                  src="/tt3-logo-3.svg"
+                  src="/tt3-logo-4.svg"
                   alt="Team Time Tables"
                   className="h-20 w-auto"
                 />
