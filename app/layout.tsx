@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   description:
     "The all-in-one solution for managing work hours, shifts, and team availability with ease.",
   icons: {
-    icon: "/homepage/tt3-logo-4.svg",
-    apple: "/homepage/tt3-logo-4.svg",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
