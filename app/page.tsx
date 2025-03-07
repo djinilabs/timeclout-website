@@ -48,12 +48,12 @@ export default function HomePage() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="/companies">
+            <Link href="https://app.tt3.app">
               <Button variant="ghost" size="sm" className="hover:text-teal-600">
                 Log in
               </Button>
             </Link>
-            <Link href="/companies">
+            <Link href="https://app.tt3.app">
               <Button
                 size="sm"
                 className="bg-teal-600 hover:bg-teal-700 text-white"
@@ -362,7 +362,7 @@ export default function HomePage() {
                     <span>AI-powered shift suggestions</span>
                   </li>
                 </ul>
-                <Link href="/companies" className="mt-6">
+                <Link href="https://app.tt3.app" className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
                     Get started
                   </Button>
