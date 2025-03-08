@@ -292,7 +292,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-teal-900">Starter</h3>
                   <p className="text-teal-700">Perfect for small teams</p>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">$9</span>
+                    <span className="text-3xl font-bold text-teal-900">$4</span>
                     <span className="text-teal-700 ml-1">/ user / month</span>
                   </div>
                 </div>
@@ -330,9 +330,7 @@ export default function HomePage() {
                   </h3>
                   <p className="text-teal-700">For growing businesses</p>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">
-                      $19
-                    </span>
+                    <span className="text-3xl font-bold text-teal-900">$6</span>
                     <span className="text-teal-700 ml-1">/ user / month</span>
                   </div>
                 </div>
@@ -375,10 +373,8 @@ export default function HomePage() {
                   </h3>
                   <p className="text-teal-700">For large organizations</p>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">
-                      $29
-                    </span>
-                    <span className="text-teal-700 ml-1">/ user / month</span>
+                    <span className="text-3xl font-bold text-teal-900">$</span>
+                    <span className="text-teal-700 ml-1">Contact Sales</span>
                   </div>
                 </div>
                 <ul className="mt-6 space-y-2 flex-1">
