@@ -9,6 +9,8 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
+const targetURL = "https://app.tt3.app";
+
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -48,12 +50,12 @@ export default function HomePage() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="https://app.tt3.app">
+            <Link href={targetURL}>
               <Button variant="ghost" size="sm" className="hover:text-teal-600">
                 Log in
               </Button>
             </Link>
-            <Link href="https://app.tt3.app">
+            <Link href={targetURL}>
               <Button
                 size="sm"
                 className="bg-teal-600 hover:bg-teal-700 text-white"
@@ -80,7 +82,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="/signup">
+                  <Link href={targetURL}>
                     <Button
                       size="lg"
                       className="w-full min-[400px]:w-auto bg-teal-600 hover:bg-teal-700 text-white"
@@ -314,7 +316,7 @@ export default function HomePage() {
                     <span>Mobile access</span>
                   </li>
                 </ul>
-                <Link href="/signup" className="mt-6">
+                <Link href={targetURL} className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
                     Get started
                   </Button>
@@ -360,7 +362,7 @@ export default function HomePage() {
                     <span>AI-powered shift suggestions</span>
                   </li>
                 </ul>
-                <Link href="https://app.tt3.app" className="mt-6">
+                <Link href={targetURL} className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
                     Get started
                   </Button>
@@ -411,7 +413,7 @@ export default function HomePage() {
                     <span>Advanced AI scheduling automation</span>
                   </li>
                 </ul>
-                <Link href="/contact" className="mt-6">
+                <Link href="mailto:team@tt3.app" className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
                     Contact sales
                   </Button>
@@ -641,22 +643,13 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="/signup">
+                <Link href={targetURL}>
                   <Button
                     size="lg"
                     variant="secondary"
                     className="w-full min-[400px]:w-auto"
                   >
                     Start your free trial
-                  </Button>
-                </Link>
-                <Link href="#demo">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full min-[400px]:w-auto border-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                  >
-                    Book a demo
                   </Button>
                 </Link>
               </div>
