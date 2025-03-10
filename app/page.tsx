@@ -98,7 +98,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-200/20 to-teal-400/20 rounded-lg blur-xl" />
                 <div className="relative bg-white border rounded-lg shadow-lg overflow-hidden">
                   <img
-                    src="/istockphoto-543351810-1024x1024.jpg"
+                    src="/team-1.jpg"
                     alt="Team of health workers"
                     className="w-full aspect-[4/3] object-cover"
                   />
@@ -438,7 +438,7 @@ export default function HomePage() {
               <div className="flex flex-col border rounded-lg p-6 bg-white">
                 <div className="flex items-center space-x-4 mb-4">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="/profile-pictures/sarah-johnson.png"
                     alt="Sarah Johnson"
                     className="rounded-full w-12 h-12 object-cover"
                   />
@@ -473,7 +473,7 @@ export default function HomePage() {
               <div className="flex flex-col border rounded-lg p-6 bg-white">
                 <div className="flex items-center space-x-4 mb-4">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="/profile-pictures/michael-chen.jpg"
                     alt="Michael Chen"
                     className="rounded-full w-12 h-12 object-cover"
                   />
@@ -509,7 +509,7 @@ export default function HomePage() {
               <div className="flex flex-col border rounded-lg p-6 bg-white">
                 <div className="flex items-center space-x-4 mb-4">
                   <img
-                    src="/placeholder.svg?height=60&width=60"
+                    src="/profile-pictures/emily-rodriguez.jpg"
                     alt="Emily Rodriguez"
                     className="rounded-full w-12 h-12 object-cover"
                   />
@@ -599,9 +599,9 @@ export default function HomePage() {
                   Is there a mobile app available?
                 </h3>
                 <p className="text-muted-foreground">
-                  Yes, Team Time Table offers mobile apps for both iOS and
-                  Android. Employees can view their schedules, clock in/out, and
-                  request time off directly from their smartphones.
+                  Yes, Team Time Table works on both iOS and Android. Employees
+                  can view their schedules and request time off directly from
+                  their smartphones.
                 </p>
               </div>
               <div className="space-y-2">
