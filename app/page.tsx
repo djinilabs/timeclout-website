@@ -392,6 +392,10 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
+                    <span>API access</span>
+                  </li>
+                  <li className="flex items-center text-teal-700">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
                     <span>Priority support</span>
                   </li>
                 </ul>
