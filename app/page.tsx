@@ -306,18 +306,18 @@ export default function HomePage() {
                   <p className="text-teal-700">Perfect for small teams</p>
                   <div className="flex items-baseline">
                     <span className="text-3xl font-bold text-teal-900">
-                      $20
+                      $49
                     </span>
                     <span className="text-teal-700 ml-1">/ month</span>
                   </div>
                   <p className="text-sm text-teal-700">
-                    Up to 8 members + $4/month per additional user
+                    Up to 15 members + $5/month per additional user
                   </p>
                 </div>
                 <ul className="mt-6 space-y-2 flex-1">
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Up to 8 team members</span>
+                    <span>Up to 15 members</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
@@ -357,12 +357,12 @@ export default function HomePage() {
                   <p className="text-teal-700">For growing organizations</p>
                   <div className="flex items-baseline">
                     <span className="text-3xl font-bold text-teal-900">
-                      $60
+                      $99
                     </span>
                     <span className="text-teal-700 ml-1">/ month</span>
                   </div>
                   <p className="text-sm text-teal-700">
-                    Up to 20 members + $3/month per additional user
+                    Up to 40 members + $4/month per additional user
                   </p>
                 </div>
                 <ul className="mt-6 space-y-2 flex-1">
