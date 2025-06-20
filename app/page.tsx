@@ -74,11 +74,17 @@ export default function HomePage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-teal-900">
-                    Simplify Team Scheduling with Team Time Table
+                    Transform Team Scheduling with Intelligent Automation
                   </h1>
+                  <p className="text-lg font-medium text-teal-600">
+                    TT3 - Team Time Table
+                  </p>
                   <p className="max-w-[600px] text-teal-700 md:text-xl">
-                    The AI-powered solution for managing work hours, automating
-                    shift assignments, and optimizing team availability.
+                    TT3 is a modern, AI-powered team scheduling and workforce
+                    management platform designed to streamline shift planning,
+                    leave management, and team coordination. Built for
+                    organizations that value efficiency, fairness, and employee
+                    satisfaction.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -116,10 +122,11 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-teal-900">
-                  Powerful Features for Team Management
+                  Comprehensive Workforce Management Features
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Everything you need to manage your team's schedule efficiently
+                  Everything you need to manage your team's schedule, leave, and
+                  performance efficiently
                 </p>
               </div>
             </div>
@@ -146,23 +153,12 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-teal-900">
-                  AI-Powered Scheduling
+                  Intelligent Shift Scheduling
                 </h3>
                 <p className="text-teal-700 text-center">
-                  Automatically generate optimal schedules based on staff
-                  preferences, skills, and business needs.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
-                <div className="p-2 bg-teal-100 rounded-full">
-                  <Calendar className="h-6 w-6 text-teal-600" />
-                </div>
-                <h3 className="text-xl font-bold text-teal-900">
-                  Intuitive Scheduling
-                </h3>
-                <p className="text-teal-700 text-center">
-                  Drag-and-drop interface for creating and managing shifts with
-                  ease.
+                  AI-powered shift assignment with drag & drop interface,
+                  conflict detection, and position templates for consistent
+                  scheduling.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
@@ -170,23 +166,23 @@ export default function HomePage() {
                   <Users className="h-6 w-6 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-bold text-teal-900">
-                  Team Availability
+                  Team Management
                 </h3>
                 <p className="text-teal-700 text-center">
-                  Track employee availability and preferences to create optimal
-                  schedules.
+                  Multi-level organization with role-based permissions,
+                  qualification management, and seamless member onboarding.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
                 <div className="p-2 bg-teal-100 rounded-full">
-                  <Bell className="h-6 w-6 text-teal-600" />
+                  <Calendar className="h-6 w-6 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-bold text-teal-900">
-                  Calendar integration
+                  Leave Management
                 </h3>
                 <p className="text-teal-700 text-center">
-                  Sync schedules with popular calendar apps like Google Calendar
-                  and Outlook for seamless coordination.
+                  Advanced leave tracking with multiple types, approval
+                  workflows, balance monitoring, and calendar integration.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
@@ -194,11 +190,23 @@ export default function HomePage() {
                   <BarChart3 className="h-6 w-6 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-bold text-teal-900">
-                  Advanced Analytics
+                  Analytics & Reporting
                 </h3>
                 <p className="text-teal-700 text-center">
-                  Gain insights into labor costs, overtime, and scheduling
-                  efficiency.
+                  Performance dashboards, schedule optimization metrics, and
+                  statistical analysis with visual charts.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
+                <div className="p-2 bg-teal-100 rounded-full">
+                  <Bell className="h-6 w-6 text-teal-600" />
+                </div>
+                <h3 className="text-xl font-bold text-teal-900">
+                  AI Assistant
+                </h3>
+                <p className="text-teal-700 text-center">
+                  Built-in AI assistant with contextual help, smart
+                  recommendations, and multi-language support.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-white">
@@ -206,10 +214,11 @@ export default function HomePage() {
                   <Smartphone className="h-6 w-6 text-teal-600" />
                 </div>
                 <h3 className="text-xl font-bold text-teal-900">
-                  Mobile Access
+                  Enterprise Features
                 </h3>
                 <p className="text-teal-700 text-center">
-                  Access schedules on the go with our responsive mobile app.
+                  Multi-company support, custom settings, email notifications,
+                  iCal integration, and real-time updates.
                 </p>
               </div>
             </div>
@@ -223,40 +232,41 @@ export default function HomePage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-teal-900">
-                    AI-Powered Shift Management
+                    AI-Powered Workforce Management
                   </h2>
                   <p className="text-teal-700 md:text-xl">
-                    Our intelligent scheduling algorithm learns from your team's
-                    patterns and preferences to create the perfect schedule
-                    every time.
+                    Our intelligent platform combines AI-powered scheduling with
+                    a built-in assistant to streamline every aspect of team
+                    management.
                   </p>
                 </div>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-teal-700">
                     <CheckCircle2 className="h-5 w-5 text-teal-600" />
                     <span>
-                      Automatically assigns shifts based on employee skills and
-                      preferences
+                      Smart auto-fill considers qualifications, preferences, and
+                      workload balance
                     </span>
                   </li>
                   <li className="flex items-center gap-2 text-teal-700">
                     <CheckCircle2 className="h-5 w-5 text-teal-600" />
                     <span>
-                      Predicts staffing needs based on historical data
+                      Built-in AI assistant provides contextual help and smart
+                      recommendations
                     </span>
                   </li>
                   <li className="flex items-center gap-2 text-teal-700">
                     <CheckCircle2 className="h-5 w-5 text-teal-600" />
                     <span>
-                      Optimizes schedules to minimize overtime and maximize
-                      productivity
+                      Automatic conflict detection and qualification mismatch
+                      prevention
                     </span>
                   </li>
                   <li className="flex items-center gap-2 text-teal-700">
                     <CheckCircle2 className="h-5 w-5 text-teal-600" />
                     <span>
-                      Adapts to changing conditions and requirements in
-                      real-time
+                      Multi-language support in English and Portuguese for
+                      global teams
                     </span>
                   </li>
                 </ul>
@@ -284,7 +294,8 @@ export default function HomePage() {
                   Simple, Transparent Pricing
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Choose the plan that works best for your team
+                  Choose the plan that works best for your organization's
+                  workforce management needs
                 </p>
               </div>
             </div>
@@ -294,31 +305,44 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-teal-900">Starter</h3>
                   <p className="text-teal-700">Perfect for small teams</p>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">$4</span>
-                    <span className="text-teal-700 ml-1">/ user / month</span>
+                    <span className="text-3xl font-bold text-teal-900">
+                      $20
+                    </span>
+                    <span className="text-teal-700 ml-1">/ month</span>
                   </div>
+                  <p className="text-sm text-teal-700">
+                    Up to 8 members + $4/month per additional user
+                  </p>
                 </div>
                 <ul className="mt-6 space-y-2 flex-1">
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Up to 10 team members</span>
+                    <span>Up to 8 team members</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Basic scheduling</span>
+                    <span>Advanced shift scheduling</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Email notifications</span>
+                    <span>Multi-level organization</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Mobile access</span>
+                    <span>Role-based permissions</span>
+                  </li>
+                  <li className="flex items-center text-teal-700">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
+                    <span>AI-powered auto-fill</span>
+                  </li>
+                  <li className="flex items-center text-teal-700">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
+                    <span>Basic analytics & reporting</span>
                   </li>
                 </ul>
                 <Link href={targetURL} className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    Get started
+                    Start 15-day trial
                   </Button>
                 </Link>
               </div>
@@ -330,41 +354,50 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-teal-900">
                     Professional
                   </h3>
-                  <p className="text-teal-700">For growing businesses</p>
+                  <p className="text-teal-700">For growing organizations</p>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">$6</span>
-                    <span className="text-teal-700 ml-1">/ user / month</span>
+                    <span className="text-3xl font-bold text-teal-900">
+                      $60
+                    </span>
+                    <span className="text-teal-700 ml-1">/ month</span>
                   </div>
+                  <p className="text-sm text-teal-700">
+                    Up to 20 members + $3/month per additional user
+                  </p>
                 </div>
                 <ul className="mt-6 space-y-2 flex-1">
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Up to 50 team members</span>
+                    <span>Up to 20 team members</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced scheduling</span>
+                    <span>Advanced shift scheduling</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>SMS & email notifications</span>
+                    <span>Multi-level organization</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Time tracking</span>
+                    <span>Role-based permissions</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Basic analytics</span>
+                    <span>AI-powered auto-fill</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>AI-powered shift suggestions</span>
+                    <span>Basic analytics & reporting</span>
+                  </li>
+                  <li className="flex items-center text-teal-700">
+                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
+                    <span>Priority support</span>
                   </li>
                 </ul>
                 <Link href={targetURL} className="mt-6">
                   <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    Get started
+                    Start 15-day trial
                   </Button>
                 </Link>
               </div>
@@ -386,31 +419,27 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced scheduling</span>
+                    <span>Multi-company support</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>All notifications</span>
+                    <span>Advanced analytics & reporting</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced time tracking</span>
+                    <span>AI assistant & smart recommendations</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced analytics</span>
+                    <span>Custom settings & policies</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>API access</span>
+                    <span>API access & integrations</span>
                   </li>
                   <li className="flex items-center text-teal-700">
                     <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
                     <span>Dedicated support</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced AI scheduling automation</span>
                   </li>
                 </ul>
                 <Link href="mailto:team@tt3.app" className="mt-6">
@@ -429,10 +458,11 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-teal-900">
-                  Trusted by Teams Worldwide
+                  Trusted by Organizations Worldwide
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  See what our customers have to say about Team Time Table
+                  See what our customers have to say about TT3's workforce
+                  management capabilities
                 </p>
               </div>
             </div>
@@ -450,9 +480,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-teal-700 flex-1">
-                  "Team Time Table has revolutionized how we manage our store
-                  schedules. We've reduced scheduling conflicts by 80% and saved
-                  hours each week on administrative tasks."
+                  "TT3 has revolutionized our workforce management. The
+                  AI-powered scheduling and leave management features have
+                  reduced our administrative workload by 80% while improving
+                  team satisfaction."
                 </p>
                 <div className="flex mt-4">
                   {[...Array(5)].map((_, i) => (
@@ -485,10 +516,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-teal-700 flex-1">
-                  "As a restaurant with fluctuating staffing needs, tt3 has been
-                  a game-changer. The mobile app means my staff always knows
-                  their schedule, and the time tracking feature has simplified
-                  our payroll process."
+                  "The multi-level organization and role-based permissions in
+                  TT3 have made managing our restaurant chain so much easier.
+                  The AI assistant helps us make better scheduling decisions
+                  every day."
                 </p>
                 <div className="flex mt-4">
                   {[...Array(5)].map((_, i) => (
@@ -523,10 +554,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-teal-700 flex-1">
-                  "Managing shifts for our healthcare facility used to be a
-                  nightmare. Team Time Table has made it simple to ensure we
-                  have proper coverage while respecting our staff's work-life
-                  balance."
+                  "TT3's advanced leave management and analytics have
+                  transformed how we handle workforce planning. The
+                  qualification management ensures we always have the right
+                  staff with the right skills."
                 </p>
                 <div className="flex mt-4">
                   {[...Array(5)].map((_, i) => (
@@ -559,70 +590,77 @@ export default function HomePage() {
                   Frequently Asked Questions
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Find answers to common questions about Team Time Table
+                  Find answers to common questions about TT3's workforce
+                  management platform
                 </p>
               </div>
             </div>
             <div className="grid gap-6 mt-12 md:grid-cols-2">
               <div className="space-y-2">
                 <h3 className="text-xl font-bold text-teal-900">
-                  How does the AI scheduling work?
+                  How does the AI-powered scheduling work?
                 </h3>
                 <p className="text-teal-700">
-                  Our AI analyzes your historical scheduling data, employee
-                  preferences, skills, and availability to automatically
-                  generate optimal schedules. It continuously learns and
-                  improves over time, adapting to your specific business
-                  patterns and needs.
+                  TT3's AI analyzes employee qualifications, preferences, and
+                  workload balance to automatically generate optimal schedules.
+                  The smart auto-fill feature considers multiple factors to
+                  ensure fair and efficient shift distribution while preventing
+                  conflicts.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Can employees request time off through the system?
+                <h3 className="text-xl font-bold text-teal-900">
+                  Can I manage multiple teams and organizations?
                 </h3>
-                <p className="text-muted-foreground">
-                  Yes, employees can submit time-off requests directly through
-                  the platform. Managers receive notifications and can approve
-                  or deny requests with a single click.
+                <p className="text-teal-700">
+                  Yes, TT3 supports multi-level organization structures with
+                  units and teams. The Enterprise plan even allows you to manage
+                  multiple companies from a single platform with role-based
+                  permissions for different access levels.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Does Team Time Table integrate with payroll systems?
+                <h3 className="text-xl font-bold text-teal-700">
+                  What types of leave can be managed?
                 </h3>
-                <p className="text-muted-foreground">
-                  Yes, we offer integrations with popular payroll systems to
-                  streamline your administrative processes. Our API also allows
-                  for custom integrations with your existing tools.
+                <p className="text-teal-700">
+                  TT3 supports multiple leave types including vacation, sick
+                  leave, parental leave, meetings, training, and more. You can
+                  configure approval workflows, track leave balances, and
+                  integrate with calendar applications.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Is there a mobile app available?
+                <h3 className="text-xl font-bold text-teal-700">
+                  How does the AI assistant help with workforce management?
                 </h3>
-                <p className="text-muted-foreground">
-                  Yes, Team Time Table works on both iOS and Android. Employees
-                  can view their schedules and request time off directly from
-                  their smartphones.
+                <p className="text-teal-700">
+                  The built-in AI assistant provides contextual help throughout
+                  the application, offers smart recommendations for scheduling
+                  decisions, and is available in both English and Portuguese for
+                  global teams.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">How secure is my data?</h3>
-                <p className="text-muted-foreground">
-                  We take security seriously. All data is encrypted both in
-                  transit and at rest. We use industry-standard security
-                  practices and regular audits to ensure your information
-                  remains protected.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">
-                  Can I customize the system to match my business needs?
+                <h3 className="text-xl font-bold text-teal-700">
+                  What analytics and reporting features are available?
                 </h3>
-                <p className="text-muted-foreground">
-                  Absolutely. Team Time Table offers extensive customization
-                  options for shift types, roles, locations, and notification
-                  preferences to adapt to your specific business requirements.
+                <p className="text-teal-700">
+                  TT3 provides comprehensive analytics including schedule
+                  optimization metrics, performance dashboards, statistical
+                  analysis of shift assignments, and visual charts showing
+                  workload distribution and inconvenience deviations.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-teal-700">
+                  Can I customize the system for my specific business needs?
+                </h3>
+                <p className="text-teal-700">
+                  Absolutely. TT3 offers extensive customization options
+                  including work schedules, timezones, leave policies,
+                  qualification definitions, and notification preferences to
+                  adapt to your specific business requirements.
                 </p>
               </div>
             </div>
@@ -635,11 +673,11 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Ready to Transform Your Team Scheduling with AI?
+                  Ready to Transform Your Workforce Management?
                 </h2>
                 <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Join thousands of businesses that trust Team Time Table for
-                  their scheduling needs
+                  Join organizations worldwide that trust TT3 for intelligent
+                  team scheduling and comprehensive workforce management
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -649,12 +687,12 @@ export default function HomePage() {
                     variant="secondary"
                     className="w-full min-[400px]:w-auto"
                   >
-                    Start your free trial
+                    Start 15-day trial
                   </Button>
                 </Link>
               </div>
               <p className="text-sm">
-                No credit card required. 14-day free trial.
+                No credit card required. 15-day free trial.
               </p>
             </div>
           </div>
@@ -672,7 +710,7 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-sm text-muted-foreground">
-                Simplifying team scheduling since 2023
+                Simplifying workforce management since 2023
               </p>
               <div className="flex gap-4">
                 <Link
@@ -878,7 +916,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-muted-foreground mb-4 md:mb-0">
-              © 2023 Team Time Table. All rights reserved.
+              © 2023 TT3. All rights reserved.
             </p>
             <div className="flex gap-4 text-xs text-muted-foreground">
               <Link href="#" className="hover:text-foreground">
