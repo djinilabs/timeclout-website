@@ -489,7 +489,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-muted-foreground mb-4 md:mb-0">
-              © 2023 TT3. All rights reserved.
+              © 2025 TT3 - Team Time Table. All rights reserved.
             </p>
             <div className="flex gap-4 text-xs text-muted-foreground">
               <Link href="#" className="hover:text-foreground">
