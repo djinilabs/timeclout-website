@@ -9,7 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const targetURL = "https://app.tt3.app";
+const betaAccessURL = "https://forms.gle/EhXCzmP4tqpLSh547";
 
 export default function HomePage() {
   return (
@@ -31,18 +31,6 @@ export default function HomePage() {
               Features
             </Link>
             <Link
-              href="#pricing"
-              className="text-sm font-medium hover:text-teal-600"
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#testimonials"
-              className="text-sm font-medium hover:text-teal-600"
-            >
-              Testimonials
-            </Link>
-            <Link
               href="#faq"
               className="text-sm font-medium hover:text-teal-600"
             >
@@ -50,17 +38,12 @@ export default function HomePage() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href={targetURL}>
-              <Button variant="ghost" size="sm" className="hover:text-teal-600">
-                Log in
-              </Button>
-            </Link>
-            <Link href={targetURL}>
+            <Link href={betaAccessURL}>
               <Button
                 size="sm"
                 className="bg-teal-600 hover:bg-teal-700 text-white"
               >
-                Start free trial
+                Request Beta Access
               </Button>
             </Link>
           </div>
@@ -76,30 +59,27 @@ export default function HomePage() {
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-teal-900">
                     Transform Team Scheduling with Intelligent Automation
                   </h1>
-                  <p className="text-lg font-medium text-teal-600">
-                    TT3 - Team Time Table
-                  </p>
                   <p className="max-w-[600px] text-teal-700 md:text-xl">
-                    TT3 is a modern, AI-powered team scheduling and workforce
-                    management platform designed to streamline shift planning,
-                    leave management, and team coordination. Built for
-                    organizations that value efficiency, fairness, and employee
-                    satisfaction.
+                    Team Time Table (TT3 for short) is a modern, AI-powered team
+                    scheduling and workforce management platform designed to
+                    streamline shift planning, leave management, and team
+                    coordination. Built for organizations that value efficiency,
+                    fairness, and employee satisfaction.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href={targetURL}>
+                  <Link href={betaAccessURL}>
                     <Button
                       size="lg"
                       className="w-full min-[400px]:w-auto bg-teal-600 hover:bg-teal-700 text-white"
                     >
-                      Start your 14-day free trial
+                      Request Beta Access
                     </Button>
                   </Link>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-teal-700">
                   <CheckCircle2 className="h-4 w-4 text-teal-600" />
-                  <span>No credit card required</span>
+                  <span>Private beta - limited spots available</span>
                 </div>
               </div>
               <div className="mx-auto lg:mx-0 relative">
@@ -285,308 +265,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section id="pricing" className="py-16 bg-teal-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-teal-900">
-                  Simple, Transparent Pricing
-                </h2>
-                <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Choose the plan that works best for your organization's
-                  workforce management needs
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="flex flex-col border rounded-lg p-6 bg-white">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-teal-900">Starter</h3>
-                  <p className="text-teal-700">Perfect for small teams</p>
-                  <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">
-                      $49
-                    </span>
-                    <span className="text-teal-700 ml-1">/ month</span>
-                  </div>
-                  <p className="text-sm text-teal-700">
-                    Up to 15 members + $5/month per additional user
-                  </p>
-                </div>
-                <ul className="mt-6 space-y-2 flex-1">
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Up to 15 members</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced shift scheduling</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Multi-level organization</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Role-based permissions</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>AI-powered auto-fill</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Basic analytics & reporting</span>
-                  </li>
-                </ul>
-                <Link href={targetURL} className="mt-6">
-                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    Start 15-day trial
-                  </Button>
-                </Link>
-              </div>
-              <div className="flex flex-col border rounded-lg p-6 bg-white relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Most Popular
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-teal-900">
-                    Professional
-                  </h3>
-                  <p className="text-teal-700">For growing organizations</p>
-                  <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">
-                      $99
-                    </span>
-                    <span className="text-teal-700 ml-1">/ month</span>
-                  </div>
-                  <p className="text-sm text-teal-700">
-                    Up to 40 members + $4/month per additional user
-                  </p>
-                </div>
-                <ul className="mt-6 space-y-2 flex-1">
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Up to 20 team members</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced shift scheduling</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Multi-level organization</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Role-based permissions</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>AI-powered auto-fill</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Basic analytics & reporting</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>API access</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Priority support</span>
-                  </li>
-                </ul>
-                <Link href={targetURL} className="mt-6">
-                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    Start 15-day trial
-                  </Button>
-                </Link>
-              </div>
-              <div className="flex flex-col border rounded-lg p-6 bg-white">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold text-teal-900">
-                    Enterprise
-                  </h3>
-                  <p className="text-teal-700">For large organizations</p>
-                  <div className="flex items-baseline">
-                    <span className="text-3xl font-bold text-teal-900">$</span>
-                    <span className="text-teal-700 ml-1">Contact Sales</span>
-                  </div>
-                </div>
-                <ul className="mt-6 space-y-2 flex-1">
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Unlimited team members</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Multi-company support</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Advanced analytics & reporting</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>AI assistant & smart recommendations</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Custom settings & policies</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>API access & integrations</span>
-                  </li>
-                  <li className="flex items-center text-teal-700">
-                    <CheckCircle2 className="h-4 w-4 text-teal-600 mr-2" />
-                    <span>Dedicated support</span>
-                  </li>
-                </ul>
-                <Link href="mailto:team@tt3.app" className="mt-6">
-                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white">
-                    Contact sales
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section id="testimonials" className="py-16 bg-teal-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-teal-900">
-                  Trusted by Organizations Worldwide
-                </h2>
-                <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  See what our customers have to say about TT3's workforce
-                  management capabilities
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="flex flex-col border rounded-lg p-6 bg-white">
-                <div className="flex items-center space-x-4 mb-4">
-                  <img
-                    src="/profile-pictures/sarah-johnson.png"
-                    alt="Sarah Johnson"
-                    className="rounded-full w-12 h-12 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-teal-900">Sarah Johnson</h4>
-                    <p className="text-sm text-teal-700">Retail Manager</p>
-                  </div>
-                </div>
-                <p className="text-teal-700 flex-1">
-                  "TT3 has revolutionized our workforce management. The
-                  AI-powered scheduling and leave management features have
-                  reduced our administrative workload by 80% while improving
-                  team satisfaction."
-                </p>
-                <div className="flex mt-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-5 h-5 text-teal-600"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <div className="flex flex-col border rounded-lg p-6 bg-white">
-                <div className="flex items-center space-x-4 mb-4">
-                  <img
-                    src="/profile-pictures/michael-chen.jpg"
-                    alt="Michael Chen"
-                    className="rounded-full w-12 h-12 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-teal-900">Michael Chen</h4>
-                    <p className="text-sm text-teal-700">Restaurant Owner</p>
-                  </div>
-                </div>
-                <p className="text-teal-700 flex-1">
-                  "The multi-level organization and role-based permissions in
-                  TT3 have made managing our restaurant chain so much easier.
-                  The AI assistant helps us make better scheduling decisions
-                  every day."
-                </p>
-                <div className="flex mt-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-5 h-5 text-teal-600"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <div className="flex flex-col border rounded-lg p-6 bg-white">
-                <div className="flex items-center space-x-4 mb-4">
-                  <img
-                    src="/profile-pictures/emily-rodriguez.jpg"
-                    alt="Emily Rodriguez"
-                    className="rounded-full w-12 h-12 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-teal-900">Emily Rodriguez</h4>
-                    <p className="text-sm text-teal-700">
-                      Healthcare Administrator
-                    </p>
-                  </div>
-                </div>
-                <p className="text-teal-700 flex-1">
-                  "TT3's advanced leave management and analytics have
-                  transformed how we handle workforce planning. The
-                  qualification management ensures we always have the right
-                  staff with the right skills."
-                </p>
-                <div className="flex mt-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-5 h-5 text-teal-600"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section */}
-        <section id="faq" className="py-16 bg-white">
+        <section id="faq" className="py-16 bg-teal-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -677,26 +357,26 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Ready to Transform Your Workforce Management?
+                  Ready to Join the Private Beta?
                 </h2>
                 <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Join organizations worldwide that trust TT3 for intelligent
-                  team scheduling and comprehensive workforce management
+                  Be among the first to experience TT3's intelligent workforce
+                  management platform
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href={targetURL}>
+                <Link href={betaAccessURL}>
                   <Button
                     size="lg"
                     variant="secondary"
                     className="w-full min-[400px]:w-auto"
                   >
-                    Start 15-day trial
+                    Request Beta Access
                   </Button>
                 </Link>
               </div>
               <p className="text-sm">
-                No credit card required. 15-day free trial.
+                Limited spots available. Join the waitlist today.
               </p>
             </div>
           </div>
@@ -714,7 +394,7 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-sm text-muted-foreground">
-                Simplifying workforce management since 2023
+                Simplifying workforce management with AI
               </p>
               <div className="flex gap-4">
                 <Link
@@ -805,117 +485,6 @@ export default function HomePage() {
                   </svg>
                 </Link>
               </div>
-            </div>
-            <div className="space-y-4">
-              <h4 className="text-sm font-medium">Product</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="#features"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#pricing"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Integrations
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Changelog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h4 className="text-sm font-medium">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Guides
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Support
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    API Reference
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h4 className="text-sm font-medium">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
             </div>
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
