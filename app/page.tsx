@@ -396,7 +396,7 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-sm text-muted-foreground">
-                Simplifying workforce management with AI
+                TimeHaupt - Simplifying workforce management with AI
               </p>
               <div className="flex gap-4">
                 <Link
