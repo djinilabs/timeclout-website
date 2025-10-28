@@ -18,8 +18,8 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/tt3-logo-4.svg"
-              alt="Team Time Tables"
+              src="/timehaupt-logo.svg"
+              alt="TimeHaupt"
               className="h-[60px] w-auto"
             />
           </div>
@@ -60,11 +60,11 @@ export default function HomePage() {
                     Transform Team Scheduling with Intelligent Automation
                   </h1>
                   <p className="max-w-[600px] text-teal-700 md:text-xl">
-                    Team Time Table (TT3 for short) is a modern, AI-powered team
-                    scheduling and workforce management platform designed to
-                    streamline shift planning, leave management, and team
-                    coordination. Built for organizations that value efficiency,
-                    fairness, and employee satisfaction.
+                    TimeHaupt is a modern, AI-powered team scheduling and
+                    workforce management platform designed to streamline shift
+                    planning, leave management, and team coordination. Built for
+                    organizations that value efficiency, fairness, and employee
+                    satisfaction.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -274,8 +274,8 @@ export default function HomePage() {
                   Frequently Asked Questions
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Find answers to common questions about TT3's workforce
-                  management platform
+                  Find answers to common questions about TimeHaupt's workforce
+                  scheduling and management platform
                 </p>
               </div>
             </div>
@@ -285,11 +285,11 @@ export default function HomePage() {
                   How does the AI-powered scheduling work?
                 </h3>
                 <p className="text-teal-700">
-                  TT3's AI analyzes employee qualifications, preferences, and
-                  workload balance to automatically generate optimal schedules.
-                  The smart auto-fill feature considers multiple factors to
-                  ensure fair and efficient shift distribution while preventing
-                  conflicts.
+                  TimeHaupt's AI analyzes employee qualifications, preferences,
+                  and workload balance to automatically generate optimal
+                  schedules. The smart auto-fill feature considers multiple
+                  factors to ensure fair and efficient shift distribution while
+                  preventing conflicts.
                 </p>
               </div>
               <div className="space-y-2">
@@ -297,10 +297,10 @@ export default function HomePage() {
                   Can I manage multiple teams and organizations?
                 </h3>
                 <p className="text-teal-700">
-                  Yes, TT3 supports multi-level organization structures with
-                  units and teams. The Enterprise plan even allows you to manage
-                  multiple companies from a single platform with role-based
-                  permissions for different access levels.
+                  Yes, TimeHaupt supports multi-level organization structures
+                  with units and teams. The Enterprise plan even allows you to
+                  manage multiple companies from a single platform with
+                  role-based permissions for different access levels.
                 </p>
               </div>
               <div className="space-y-2">
@@ -308,7 +308,8 @@ export default function HomePage() {
                   What types of leave can be managed?
                 </h3>
                 <p className="text-teal-700">
-                  TT3 supports multiple leave types including vacation, sick
+                  TimeHaupt supports multiple leave types including vacation,
+                  sick leave, parental leave, meetings, training, and more. You
                   leave, parental leave, meetings, training, and more. You can
                   configure approval workflows, track leave balances, and
                   integrate with calendar applications.
@@ -330,10 +331,11 @@ export default function HomePage() {
                   What analytics and reporting features are available?
                 </h3>
                 <p className="text-teal-700">
-                  TT3 provides comprehensive analytics including schedule
+                  TimeHaupt provides comprehensive analytics including schedule
                   optimization metrics, performance dashboards, statistical
                   analysis of shift assignments, and visual charts showing
-                  workload distribution and inconvenience deviations.
+                  workload distribution and inconvenience deviations. You can
+                  also export data to CSV for further analysis.
                 </p>
               </div>
               <div className="space-y-2">
@@ -341,7 +343,7 @@ export default function HomePage() {
                   Can I customize the system for my specific business needs?
                 </h3>
                 <p className="text-teal-700">
-                  Absolutely. TT3 offers extensive customization options
+                  Absolutely. TimeHaupt offers extensive customization options
                   including work schedules, timezones, leave policies,
                   qualification definitions, and notification preferences to
                   adapt to your specific business requirements.
@@ -360,8 +362,8 @@ export default function HomePage() {
                   Ready to Join the Private Beta?
                 </h2>
                 <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Be among the first to experience TT3's intelligent workforce
-                  management platform
+                  Be among the first to experience TimeHaupt's intelligent
+                  workforce management platform
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -388,8 +390,8 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <img
-                  src="/tt3-logo-4.svg"
-                  alt="Team Time Tables"
+                  src="/timehaupt-logo.svg"
+                  alt="TimeHaupt"
                   className="h-20 w-auto"
                 />
               </div>
@@ -489,7 +491,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-muted-foreground mb-4 md:mb-0">
-              © 2025 TT3 - Team Time Table. All rights reserved.
+              © 2025 Gordon & Teixeira Lda. All rights reserved.
             </p>
             <div className="flex gap-4 text-xs text-muted-foreground">
               <Link href="#" className="hover:text-foreground">

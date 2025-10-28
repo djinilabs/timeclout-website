@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Team Time Table (tt3) - Manage Team Work Hours and Shifts",
+  title: "TimeHaput - Manage Team Work Hours and Shifts",
   description:
     "The all-in-one solution for managing work hours, shifts, and team availability with ease.",
   icons: {
