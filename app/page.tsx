@@ -18,8 +18,8 @@ export default function HomePage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/timehaupt-logo.svg"
-              alt="TimeHaupt"
+              src="/timeclout-logo.svg"
+              alt="TimeClout"
               className="h-[60px] w-auto"
             />
           </div>
@@ -60,7 +60,7 @@ export default function HomePage() {
                     Transform Team Scheduling with Intelligent Automation
                   </h1>
                   <p className="max-w-[600px] text-teal-700 md:text-xl">
-                    TimeHaupt is a modern, AI-powered team scheduling and
+                    TimeClout is a modern, AI-powered team scheduling and
                     workforce management platform designed to streamline shift
                     planning, leave management, and team coordination. Built for
                     organizations that value efficiency, fairness, and employee
@@ -274,7 +274,7 @@ export default function HomePage() {
                   Frequently Asked Questions
                 </h2>
                 <p className="max-w-[700px] text-teal-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Find answers to common questions about TimeHaupt's workforce
+                  Find answers to common questions about TimeClout's workforce
                   scheduling and management platform
                 </p>
               </div>
@@ -285,7 +285,7 @@ export default function HomePage() {
                   How does the AI-powered scheduling work?
                 </h3>
                 <p className="text-teal-700">
-                  TimeHaupt's AI analyzes employee qualifications, preferences,
+                  TimeClout's AI analyzes employee qualifications, preferences,
                   and workload balance to automatically generate optimal
                   schedules. The smart auto-fill feature considers multiple
                   factors to ensure fair and efficient shift distribution while
@@ -297,7 +297,7 @@ export default function HomePage() {
                   Can I manage multiple teams and organizations?
                 </h3>
                 <p className="text-teal-700">
-                  Yes, TimeHaupt supports multi-level organization structures
+                  Yes, TimeClout supports multi-level organization structures
                   with units and teams. The Enterprise plan even allows you to
                   manage multiple companies from a single platform with
                   role-based permissions for different access levels.
@@ -308,7 +308,7 @@ export default function HomePage() {
                   What types of leave can be managed?
                 </h3>
                 <p className="text-teal-700">
-                  TimeHaupt supports multiple leave types including vacation,
+                  TimeClout supports multiple leave types including vacation,
                   sick leave, parental leave, meetings, training, and more. You
                   leave, parental leave, meetings, training, and more. You can
                   configure approval workflows, track leave balances, and
@@ -331,7 +331,7 @@ export default function HomePage() {
                   What analytics and reporting features are available?
                 </h3>
                 <p className="text-teal-700">
-                  TimeHaupt provides comprehensive analytics including schedule
+                  TimeClout provides comprehensive analytics including schedule
                   optimization metrics, performance dashboards, statistical
                   analysis of shift assignments, and visual charts showing
                   workload distribution and inconvenience deviations. You can
@@ -343,7 +343,7 @@ export default function HomePage() {
                   Can I customize the system for my specific business needs?
                 </h3>
                 <p className="text-teal-700">
-                  Absolutely. TimeHaupt offers extensive customization options
+                  Absolutely. TimeClout offers extensive customization options
                   including work schedules, timezones, leave policies,
                   qualification definitions, and notification preferences to
                   adapt to your specific business requirements.
@@ -362,7 +362,7 @@ export default function HomePage() {
                   Ready to Join the Private Beta?
                 </h2>
                 <p className="max-w-[700px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Be among the first to experience TimeHaupt's intelligent
+                  Be among the first to experience TimeClout's intelligent
                   workforce management platform
                 </p>
               </div>
@@ -390,13 +390,13 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <img
-                  src="/timehaupt-logo.svg"
-                  alt="TimeHaupt"
+                  src="/timeclout-logo.svg"
+                  alt="TimeClout"
                   className="h-20 w-auto"
                 />
               </div>
               <p className="text-sm text-muted-foreground">
-                TimeHaupt - Simplifying workforce management with AI
+                TimeClout - Simplifying workforce management with AI
               </p>
               <div className="flex gap-4">
                 <Link

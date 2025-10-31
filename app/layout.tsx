@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TimeHaput - Manage Team Work Hours and Shifts",
+  title: "TimeClout - Manage Team Work Hours and Shifts",
   description:
     "The all-in-one solution for managing work hours, shifts, and team availability with ease.",
   icons: {
@@ -26,5 +26,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import "./globals.css";
