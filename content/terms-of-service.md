@@ -1,7 +1,5 @@
 # Terms of Service
 
-Last updated: [Date will be dynamically generated in the application]
-
 ## 1. Acceptance of Terms
 
 By accessing and using TimeClout ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.

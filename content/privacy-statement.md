@@ -1,7 +1,5 @@
 # Privacy Statement
 
-Last updated: [Date will be dynamically generated in the application]
-
 ## 1. Introduction
 
 TimeClout ("we," "our," or "us") is committed to protecting your privacy. This Privacy Statement explains how we collect, use, disclose, and safeguard your information when you use our team scheduling and leave management platform.
