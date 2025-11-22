@@ -2,7 +2,7 @@
 title: "Stop Playing Tetris with Your Roster: A Fair Comparison of Retail Scheduling Tools in 2025"
 slug: "stop-playing-tetris-with-your-roster-a-fair-comparison-of-retail-scheduling-tools-in-2025"
 author: "Pedro Teixeira"
-date: "2025-11-22"
+date: "2025-11-10"
 summary: "Retail managers are still stuck playing 'Roster Tetris'—juggling spreadsheets and apps that barely do more than move the puzzle from paper to screen. This article gives a fair, direct comparison of leading scheduling platforms—Deputy, When I Work, Homebase, and TimeClout—to see which tools genuinely make life easier. Learn why TimeClout’s AI-driven constraint solver offers smarter auto-scheduling, real fairness, and next-generation optimization that the big players can’t match."
 image: "/before-after-retail.png"
 tags:

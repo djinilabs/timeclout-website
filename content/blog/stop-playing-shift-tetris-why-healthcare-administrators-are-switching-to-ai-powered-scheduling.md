@@ -2,7 +2,7 @@
 title: 'Stop Playing "Shift Tetris": Why Healthcare Administrators Are Switching to AI-Powered Scheduling'
 slug: "stop-playing-shift-tetris-why-healthcare-administrators-are-switching-to-ai-powered-scheduling"
 author: "Pedro Teixeira"
-date: "2025-11-22"
+date: "2025-11-14"
 summary: "Healthcare administrators are ditching manual scheduling for AI-powered solutions. Compare TimeClout with Deputy, Connecteam, and MakeShift to see why AI constraint solving is revolutionizing healthcare workforce management."
 image: "/traditional-ai-powered.png"
 tags:
