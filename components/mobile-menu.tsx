@@ -67,6 +67,15 @@ export function MobileMenu() {
             </Link>
           </SheetClose>
           <SheetClose asChild>
+            <Link
+              href="/blog"
+              className="text-lg font-medium hover:text-teal-600 transition-colors py-2"
+              onClick={() => setOpen(false)}
+            >
+              Blog
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
             <Link href={betaAccessURL} onClick={() => setOpen(false)}>
               <Button
                 size="lg"

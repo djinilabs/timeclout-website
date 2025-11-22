@@ -50,6 +50,12 @@ export function Header({ isHomePage = false }: HeaderProps) {
           >
             FAQ
           </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium hover:text-teal-600 transition-colors"
+          >
+            Blog
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Link href={betaAccessURL} className="hidden md:block">
