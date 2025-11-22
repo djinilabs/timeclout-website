@@ -31,10 +31,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { usePostHog } from "@/hooks/use-posthog";
 
 const betaAccessURL = "https://forms.gle/EhXCzmP4tqpLSh547";
 
 export default function HomePage() {
+  const { trackCTA, trackBetaAccess } = usePostHog();
   return (
     <div className="flex flex-col min-h-screen">
       <Header isHomePage={true} />
@@ -60,7 +62,13 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 min-[400px]:flex-row">
-                  <Link href={betaAccessURL}>
+                  <Link
+                    href={betaAccessURL}
+                    onClick={() => {
+                      trackBetaAccess("hero");
+                      trackCTA("join_beta", "hero");
+                    }}
+                  >
                     <Button
                       size="lg"
                       className="w-full min-[400px]:w-auto bg-teal-600 hover:bg-teal-700 text-white group"
@@ -69,7 +77,12 @@ export default function HomePage() {
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
-                  <Link href="#how-it-works">
+                  <Link
+                    href="#how-it-works"
+                    onClick={() => {
+                      trackCTA("see_how_it_works", "hero");
+                    }}
+                  >
                     <Button
                       size="lg"
                       variant="outline"
@@ -376,7 +389,13 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mt-12 flex justify-center">
-              <Link href={betaAccessURL}>
+              <Link
+                href={betaAccessURL}
+                onClick={() => {
+                  trackBetaAccess("how_it_works");
+                  trackCTA("get_started_free", "how_it_works");
+                }}
+              >
                 <Button
                   size="lg"
                   className="bg-teal-600 hover:bg-teal-700 text-white"
@@ -681,7 +700,15 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 min-[400px]:flex-row">
-                <Link href={betaAccessURL}>
+                <Link
+                  href={betaAccessURL}
+                  onClick={() => {
+                    trackBetaAccess("cta_section");
+                    trackCTA("join_beta", "cta_section", {
+                      variant: "secondary",
+                    });
+                  }}
+                >
                   <Button
                     size="lg"
                     variant="secondary"

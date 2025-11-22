@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "@/components/mobile-menu";
+import { usePostHog } from "@/hooks/use-posthog";
 
 const betaAccessURL = "https://forms.gle/EhXCzmP4tqpLSh547";
 
@@ -11,6 +12,7 @@ interface HeaderProps {
 }
 
 export function Header({ isHomePage = false }: HeaderProps) {
+  const { trackCTA, trackBetaAccess } = usePostHog();
   const getNavLink = (anchor: string) => {
     return isHomePage ? anchor : `/${anchor}`;
   };
@@ -58,7 +60,14 @@ export function Header({ isHomePage = false }: HeaderProps) {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Link href={betaAccessURL} className="hidden md:block">
+          <Link
+            href={betaAccessURL}
+            className="hidden md:block"
+            onClick={() => {
+              trackBetaAccess("header");
+              trackCTA("request_beta_access", "header");
+            }}
+          >
             <Button
               size="sm"
               className="bg-teal-600 hover:bg-teal-700 text-white"

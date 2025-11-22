@@ -10,11 +10,13 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import { usePostHog } from "@/hooks/use-posthog";
 
 const betaAccessURL = "https://forms.gle/EhXCzmP4tqpLSh547";
 
 export function MobileMenu() {
   const [open, setOpen] = React.useState(false);
+  const { trackCTA, trackBetaAccess } = usePostHog();
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -76,7 +78,14 @@ export function MobileMenu() {
             </Link>
           </SheetClose>
           <SheetClose asChild>
-            <Link href={betaAccessURL} onClick={() => setOpen(false)}>
+            <Link
+              href={betaAccessURL}
+              onClick={() => {
+                setOpen(false);
+                trackBetaAccess("mobile_menu");
+                trackCTA("request_beta_access", "mobile_menu");
+              }}
+            >
               <Button
                 size="lg"
                 className="w-full bg-teal-600 hover:bg-teal-700 text-white mt-4"
