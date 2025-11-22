@@ -71,3 +71,4 @@ export function getAllBlogSlugs(): string[] {
   return posts.map((post) => post.slug);
 }
 
+

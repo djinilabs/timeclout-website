@@ -52,3 +52,4 @@ Automatic conflict detection means fewer scheduling errors. The system prevents 
 Ready to transform your scheduling process? Join our private beta to experience AI-powered scheduling firsthand. It's free, requires no credit card, and gives you full access to all features.
 
 The future of workforce management is here, and it's powered by AI.
+
