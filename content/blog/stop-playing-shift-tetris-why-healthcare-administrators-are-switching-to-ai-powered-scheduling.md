@@ -100,6 +100,3 @@ Burnout is the \#1 enemy of healthcare retention. It often stems from perceived 
 If you need a "Swiss Army Knife" that handles newsletters, quizzes, and training, **Connecteam** is a great tool. If you need a standard time clock for a massive general workforce, **Deputy** is a safe bet.
 
 But if your daily headache is **solving the roster puzzle**—trying to balance certifications, patient safety, overtime costs, and staff sanity—**TimeClout** is built for you. We don't just digitize your schedule; we _optimize_ it.
-
-**Ready to stop playing Tetris with your team's lives?**
-[**Join the TimeClout Beta today**](https://www.google.com/url?sa=E&source=gmail&q=https://timeclout.com) and let our AI handle the heavy lifting.

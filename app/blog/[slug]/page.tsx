@@ -107,6 +107,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     description: post.summary,
     image: imageUrl,
     datePublished: post.date,
+    keywords: post.tags.join(", "),
     author: {
       "@type": "Person",
       name: post.author,
