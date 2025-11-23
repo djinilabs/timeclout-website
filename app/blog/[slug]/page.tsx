@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { MarkdownContent } from "@/components/markdown-content";
-import { getBlogPostBySlug, getAllBlogSlugs } from "@/lib/blog";
+import { getBlogPostBySlug, getAllBlogSlugs, getRelatedBlogPosts } from "@/lib/blog";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -92,6 +92,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound();
   }
+
+  const relatedPosts = getRelatedBlogPosts(params.slug, 3);
 
   const url = `https://timeclout.com/blog/${post.slug}`;
   const imageUrl = post.image
@@ -191,6 +193,58 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 </Link>
               </div>
             </div>
+
+            {/* Related Articles Section */}
+            {relatedPosts.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-teal-200">
+                <h2 className="text-2xl font-bold text-teal-900 mb-6">
+                  Related Articles
+                </h2>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {relatedPosts.map((relatedPost) => (
+                    <Link
+                      key={relatedPost.slug}
+                      href={`/blog/${relatedPost.slug}`}
+                      className="group flex flex-col border rounded-lg overflow-hidden bg-white hover:shadow-lg hover:border-teal-300 transition-all duration-300"
+                    >
+                      {relatedPost.image && (
+                        <div className="relative w-full aspect-video overflow-hidden bg-teal-50">
+                          <img
+                            src={relatedPost.image}
+                            alt={relatedPost.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      )}
+                      <div className="flex flex-col flex-1 p-6">
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          {relatedPost.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="px-2 py-1 text-xs font-medium bg-teal-100 text-teal-700 rounded-full"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                        <h3 className="text-xl font-bold text-teal-900 mb-2 group-hover:text-teal-600 transition-colors">
+                          {relatedPost.title}
+                        </h3>
+                        <p className="text-teal-700 text-sm mb-4 line-clamp-3 flex-1">
+                          {relatedPost.summary}
+                        </p>
+                        <div className="flex items-center justify-between text-sm text-teal-600 mt-auto pt-4 border-t">
+                          <span className="font-medium">{relatedPost.author}</span>
+                          <time dateTime={relatedPost.date}>
+                            {format(new Date(relatedPost.date), "MMM d, yyyy")}
+                          </time>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </article>
         </div>
       </main>

@@ -71,4 +71,40 @@ export function getAllBlogSlugs(): string[] {
   return posts.map((post) => post.slug);
 }
 
+export function getRelatedBlogPosts(slug: string, limit: number = 3): BlogPost[] {
+  const currentPost = getBlogPostBySlug(slug);
+  
+  if (!currentPost) {
+    return [];
+  }
+
+  const allPosts = getAllBlogPosts();
+  
+  // Filter out current post and find posts with shared tags
+  const relatedPosts = allPosts
+    .filter((post) => post.slug !== slug)
+    .map((post) => {
+      // Calculate number of shared tags
+      const sharedTags = post.tags.filter((tag) => currentPost.tags.includes(tag));
+      return {
+        post,
+        sharedTagCount: sharedTags.length,
+      };
+    })
+    .filter((item) => item.sharedTagCount > 0) // Only posts with at least one shared tag
+    .sort((a, b) => {
+      // Sort by number of shared tags (descending), then by date (descending)
+      if (b.sharedTagCount !== a.sharedTagCount) {
+        return b.sharedTagCount - a.sharedTagCount;
+      }
+      return new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
+    })
+    .slice(0, limit)
+    .map((item) => item.post);
+
+  return relatedPosts;
+}
+
+
+
 
